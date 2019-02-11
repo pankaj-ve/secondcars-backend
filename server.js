@@ -14,6 +14,8 @@ let loginRoute = require('./Routes/login'),
 
     //app.use(express.static('/public'))
  app.use("/media", express.static(path.join(__dirname, '/public')));
+ app.use(express.static(path.join(__dirname, '//dist/secondcars/')));
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false }));
@@ -36,7 +38,10 @@ app.get('/', function(req, res) {
     res.send('hello, world!');
 });
 
+app.get('*', function(req,res) {
+  res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
   
+  });  
 
 server.listen(config.NODE_SERVER_PORT.port,function(){
     console.log('app listening on port:'+config.NODE_SERVER_PORT.port);
