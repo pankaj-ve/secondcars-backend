@@ -12,7 +12,7 @@ let serverURLs = {
         "EMAIL_SECURE": true,
     },
     "staging": {
-        "NODE_SERVER": "http://11.11.11.11",
+        "NODE_SERVER": "http://localhost",
         "NODE_SERVER_PORT": "3000",
         "MONGO_DB": "mongodb://deployment:kaur%40123@ds331145.mlab.com:31145/secondcars",
         "EMAIL_USER": 'toothfairysanjeet@gmail.com',
@@ -22,7 +22,7 @@ let serverURLs = {
         "EMAIL_SECURE": true,
     }
 }
-//mongodb://deployment:kaur%40123@ds225375.mlab.com:25375/chat"
+//mongodb://<dbuser>:<dbpassword>@ds331145.mlab.com:31145/secondcars
 let config = {
     "DB_URL": {
         "url": `${serverURLs[environment].MONGO_DB}`
