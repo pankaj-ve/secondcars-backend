@@ -12,7 +12,7 @@ let serverURLs = {
         "EMAIL_SECURE": true,
     },
     "staging": {
-        "NODE_SERVER": "http://localhost",
+        "NODE_SERVER": "https://secondcars-server.herokuapp.com/",
         "NODE_SERVER_PORT": "3000",
         "MONGO_DB": "mongodb://deployment:kaur%40123@ds331145.mlab.com:31145/secondcars",
         "EMAIL_USER": 'toothfairysanjeet@gmail.com',
