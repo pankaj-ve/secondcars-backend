@@ -978,7 +978,7 @@ __webpack_require__.r(__webpack_exports__);
 var environment = {
     production: false,
     //apiUrl: 'http://localhost:3000/'
-    apiUrl: 'https://secondcars-server.herokuapp.com'
+    apiUrl: 'https://secondcars-server.herokuapp.com/'
 };
 /*
  * For easier debugging in development mode, you can import the following file
