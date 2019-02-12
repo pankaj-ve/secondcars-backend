@@ -38,10 +38,10 @@ app.get('/', function(req, res) {
     res.send('hello, world!');
 });
 
-// app.get('*', function(req,res) {
-//   res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
+app.get('*', function(req,res) {
+  res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
   
-//   });  
+  });  
 
 server.listen(config.NODE_SERVER_PORT.port,function(){
     console.log('app listening on port:'+config.NODE_SERVER_PORT.port);
