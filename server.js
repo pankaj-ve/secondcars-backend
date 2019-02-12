@@ -35,13 +35,11 @@ app.use(function(req, res, next) {
        
 /*first API to check if server is running*/
 app.get('/', function(req, res) {
-    res.send('hello, world!');
+    res.end('hello, world!');
 });
 
 app.get('*', function(req,res) {
-    res.end('<h1></h1>hello, world!</h1>');
-    // res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
-  
+     res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
   });  
 
 server.listen(config.NODE_SERVER_PORT.port,function(){
