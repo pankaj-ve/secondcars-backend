@@ -14,7 +14,7 @@ let serverURLs = {
     "staging": {
         "NODE_SERVER": "http://11.11.11.11",
         "NODE_SERVER_PORT": "3000",
-        "MONGO_DB": "mongodb://deployment:kaur@123@ds331145.mlab.com:25375/secondcars",
+        "MONGO_DB": "mongodb://deployment:kaur%40123@ds331145.mlab.com:25375/secondcars",
         "EMAIL_USER": 'toothfairysanjeet@gmail.com',
         "EMAIL_PASS": 'Sanj1234A',
         "EMAIL_HOST": 'smtp.gmail.com',
