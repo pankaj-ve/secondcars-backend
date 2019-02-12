@@ -12,10 +12,10 @@ let serverURLs = {
         "EMAIL_SECURE": true,
         "CRON_PATTERN": '15 * * * * *',
     },
-    "production": {
+    "staging": {
         "NODE_SERVER": "http://11.11.11.11",
         "NODE_SERVER_PORT": "3000",
-        "MONGO_DB": "mongodb://localhost:27017/angular-login-register",
+        "MONGO_DB": "deployment:@ds331145.mlab.com:25375/secondcars",
         "EMAIL_USER": 'toothfairysanjeet@gmail.com',
         "EMAIL_PASS": 'Sanj1234A',
         "EMAIL_HOST": 'smtp.gmail.com',
@@ -24,7 +24,7 @@ let serverURLs = {
         "CRON_PATTERN": '5 * * * * *',
     }
 }
-
+//mongodb://deployment:kaur%40123@ds225375.mlab.com:25375/chat"
 let config = {
     "DB_URL": {
         "url": `${serverURLs[environment].MONGO_DB}`
