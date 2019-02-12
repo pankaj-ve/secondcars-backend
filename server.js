@@ -39,7 +39,8 @@ app.get('/', function(req, res) {
 });
 
 app.get('*', function(req,res) {
-  res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
+    res.end('<h1></h1>hello, world!</h1>');
+    // res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
   
   });  
 
