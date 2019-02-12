@@ -41,7 +41,8 @@ app.get('/', function(req, res) {
 // app.get('*', function(req,res) {
 //      res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
 //   });  
+var port = process.env.PORT || 3000;
 
-server.listen(config.NODE_SERVER_PORT.port,function(){
-    console.log('app listening on port:'+config.NODE_SERVER_PORT.port);
+server.listen(port,function(){
+    console.log('app listening on port:'+port);
 });
