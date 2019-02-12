@@ -34,13 +34,13 @@ app.use(function(req, res, next) {
 }); 
        
 /*first API to check if server is running*/
-app.get('/', function(req, res) {
-    res.end('hello, world!');
-});
+// app.get('/', function(req, res) {
+//     res.end('hello, world!');
+// });
 
-// app.get('*', function(req,res) {
-//      res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
-//   });  
+app.get('*', function(req,res) {
+     res.sendFile(path.join(__dirname+'/dist/secondcars/index.html'));
+  });  
 var port = process.env.PORT || 3000;
 
 server.listen(port,function(){
